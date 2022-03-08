@@ -1,0 +1,161 @@
+* {
+    padding:0;
+    margin: 0;
+    box-sizing:border-box;
+    text-decoration:none;
+    font-family: sans-serif;
+    font-size:14px;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    background-color: rgb(241, 56, 56);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.instagram-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    width: 60%;
+    height: 100vh;
+}
+
+.celulone {
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    width:50%;
+}
+
+.celulone img {
+    height: 50rem;
+}
+
+.instagram-continue {
+    display: flex;
+    align-content: center;
+    justify-content: space-around;
+    flex-direction: column;
+    width: 50%;
+    min-height: 34rem;
+}
+
+.group {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    background-color: #ffff;
+    width: 100%;
+    padding: 1.3rem 0;
+    border: 1px solid lightgray;
+}
+
+.group:nth-child(1) {
+    min-height: 19rem;
+}
+
+.instagram-logo {
+    height: 3rem;
+}
+
+.foto-de-perfil {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.foto-de-perfil img{
+    height: 6rem;
+}
+
+.login {
+    background-color: red;
+    color: white;
+    padding: 8px;
+    border-radius: 4px;
+}
+
+.logout {
+    color: red;
+    margin-top: 1rem;
+}
+
+.outra-conta {
+    color: gray;
+}
+
+.link-azul {
+    color: rgb(241, 56, 56);
+}
+
+.baixe-app {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 1.3rem 0;
+    border-radius: 5px;
+    font-weight: bolder;
+}
+
+.download {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 1rem;
+}
+
+.app-download {
+    height: 3rem;
+    width: 10rem;
+    background-size: cover;
+}
+
+.app-download:nth-child(1) {
+    background-image: url(./img/apple.png);
+}
+
+.app-download:nth-child(2) {
+    background-image: url(./img/guplay.png);
+}
+
+/* media queries */
+
+@media (max-width: 1024px) {
+    .instagram-wrapper {
+        width: 90%;
+    }
+}
+
+@media (max-width: 650px) {
+    
+    .instagram-wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: start;
+        width: 90%;
+        height: 100vh;
+    }
+    .celulone{
+        display: none;
+    }
+    .instagram-continue {
+        align-content: center;
+        align-items: center;
+        width: 100%;
+    }
+    .group {
+        border: 1px solid transparent;
+    }
+}
